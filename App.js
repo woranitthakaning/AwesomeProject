@@ -17,10 +17,14 @@ import Ex12 from './screens/week2/Ex12';
 import Resort from './screens/week3/Resort';
 import Travel from './screens/week3/Travel';
 import Health from './screens/week5/Health';
+import Home from './screens/week6/Home';
+import FlatListExample from './screens/week6/FlatListExample';
 
 export default function App() {
   return (
-    <Health />
+    //<FlatListExample/>
+     <Home/>
+    //<Health />
     //<Resort />
     //<Travel />
     //<Welcome/ >
