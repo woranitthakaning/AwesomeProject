@@ -19,11 +19,22 @@ import Travel from './screens/week3/Travel';
 import Health from './screens/week5/Health';
 import Home from './screens/week6/Home';
 import FlatListExample from './screens/week6/FlatListExample';
+import { NavigationContainer } from '@react-navigation/native';
+import HomeStack from './navigations/HomeStack';
+import BottomTab from './navigations/BottomTab';
+import RootStack from './navigations/RootStack';
+import ChartKitScreen from './screens/week5/ChartKitScreen';
 
 export default function App() {
   return (
+    <NavigationContainer>
+      {/*<HomeStack />*/}
+      {/*<ChartKitScreen />*/}
+      {/*<BottomTab />*/}
+      <RootStack />
+    </NavigationContainer>
     //<FlatListExample/>
-     <Home/>
+    //<Home/>
     //<Health />
     //<Resort />
     //<Travel />
@@ -36,9 +47,9 @@ export default function App() {
     //<Ex06 />
     //<Ex07 />
     //<Ex08 />
-      //<Ex09 />
-     //<Ex10 />
-     //<Ex11/>
-     //<Ex12/>
+    //<Ex09 />
+    //<Ex10 />
+    //<Ex11/>
+    //<Ex12/>
   );
 }
