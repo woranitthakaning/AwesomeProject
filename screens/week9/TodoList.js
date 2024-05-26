@@ -45,6 +45,7 @@ export default function TodoList() {
     };     
     const onUpdate = (new_title, id) => {   
         //CLONE ARRAY FIRST
+
         let t = [...todos];
         //Find index of specific object using findIndex method.   
         let index = t.findIndex((item => item.id == id));
@@ -81,8 +82,6 @@ export default function TodoList() {
         TodoStorage.writeItems(t);
         TodoStorage.removeItem(t[index]);
     };  
-
-
     return (
         <View style={{ flex: 1 }}>
             <FlatList
@@ -111,7 +110,6 @@ export default function TodoList() {
             >
                 <FontAwesome name='plus' size={26} />
             </TouchableOpacity>
-
         </View>
     );
 }
