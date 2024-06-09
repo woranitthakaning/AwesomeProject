@@ -24,15 +24,18 @@ import HomeStack from './navigations/HomeStack';
 import BottomTab from './navigations/BottomTab';
 import RootStack from './navigations/RootStack';
 import ChartKitScreen from './screens/week5/ChartKitScreen';
+import { AuthContextProvider } from './hooks/AuthContextProvider';
 
 export default function App() {
   return (
+    <AuthContextProvider>
     <NavigationContainer>
-      {/*<HomeStack />*/}
-      {/*<ChartKitScreen />*/}
-      {/*<BottomTab />*/}
       <RootStack />
     </NavigationContainer>
+    </AuthContextProvider>
+     //<HomeStack />
+      //<ChartKitScreen />
+     //<BottomTab />
     //<FlatListExample/>
     //<Home/>
     //<Health />
